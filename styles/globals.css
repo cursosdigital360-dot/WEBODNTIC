@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Obligamos a Tailwind v4 a escanear tus componentes fuera de src */
+@source "../../components";
+@source "../../content";
+
+/* Estilos base para Odontic */
+:root {
+  --foreground-rgb: 3, 30, 114; /* #031E72 */
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 243, 246, 250;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
