@@ -30,7 +30,7 @@ export const siteConfig = {
   hero: {
     title: "La evolución del Diseño de Sonrisa en Tepic",
     subtitle: "Combinamos tecnología digital avanzada y laboratorio propio para crear sonrisas naturales, precisas y diseñadas exclusivamente para ti.",
-    primaryCta: "Agendar Valoración Digital",
+    primaryCta: "Valoración Digital y Planes de Financiamiento",
   },
 
   trust: {
@@ -121,6 +121,7 @@ export const siteConfig = {
   pricing: {
     title: "Tu sonrisa es tu mejor inversión",
     description: "Ofrecemos planes de tratamiento personalizados basados en tu diagnóstico digital. Contamos con opciones de financiamiento para que el diseño de tu sonrisa sea una realidad.",
+    ctaLabel: "Solicita tu valoración aquí",
   },
 
   faq: {
@@ -143,5 +144,6 @@ export const siteConfig = {
   contactSection: {
     title: "Comienza hoy tu cambio",
     subtitle: "Agenda tu cita en Odontic Clínica Integral y descubre el poder de una sonrisa diseñada digitalmente.",
+    ctaLabel: "Solicita tu valoración aquí",
   },
 };
