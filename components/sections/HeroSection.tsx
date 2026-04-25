@@ -32,7 +32,7 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
             <Button 
-              href={`https://wa.me/${contact.whatsapp.replace('+', '')}`}
+              href={`https://wa.me/${contact.whatsapp.replace('+', '')}?text=${encodeURIComponent(contact.whatsappMessage)}`}
               variant="primary" 
               size="lg"
               className="w-full sm:w-auto shadow-lg shadow-[#3EA0FF]/20"

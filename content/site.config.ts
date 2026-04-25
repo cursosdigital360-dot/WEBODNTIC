@@ -8,6 +8,8 @@ export const siteConfig = {
   contact: {
     phone: "311 202 0547",
     whatsapp: "+523112020547",
+    // NUEVO: Mensaje global prellenado para WhatsApp
+    whatsappMessage: "Hola Odontic, visité su sitio web y me interesa agendar mi valoración digital. Quisiera información sobre el diseño de sonrisa y los planes de financiamiento.",
     address: "Calle Juan Escutia 168 A, Centro",
     city: "Tepic, Nayarit",
     hours: "Lunes a viernes de 10 am a 8 pm",

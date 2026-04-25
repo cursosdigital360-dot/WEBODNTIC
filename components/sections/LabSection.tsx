@@ -19,14 +19,14 @@ export default function LabSection() {
     <Section id="laboratorio" className="bg-[#031E72] text-white overflow-hidden">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         
-        {/* Visual Area - Facebook Video Integration (Square container) */}
+        {/* Visual Area - Facebook Video Integration (YouTube 16:9 ratio) */}
         <div className="flex-1 w-full order-2 lg:order-1 flex justify-center">
-          {/* Contenedor Cuadrado con fondo negro para letterboxing */}
-          <div className="relative w-full max-w-xl aspect-square rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(62,160,255,0.15)] bg-black">
+          {/* Contenedor con aspect-video (16:9) para formato clásico horizontal */}
+          <div className="relative w-full max-w-xl aspect-video rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(62,160,255,0.15)] bg-black">
             {/* Overlay sutil para dar acabado */}
             <div className="absolute inset-0 pointer-events-none z-10 rounded-2xl" />
             
-            {/* El iframe llena el contenedor cuadrado. Facebook centrará el video horizontal */}
+            {/* El iframe llena el contenedor 16:9 */}
             <iframe 
               src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1057572302043762&show_text=false" 
               title="Video Laboratorio Odontic Tepic"
@@ -67,7 +67,6 @@ export default function LabSection() {
           </div>
 
           <div className="pt-4">
-            {/* Botón actualizado con la petición del cliente */}
             <CTAInline 
               label="Solicita tu valoración aquí" 
               href={waLink} 

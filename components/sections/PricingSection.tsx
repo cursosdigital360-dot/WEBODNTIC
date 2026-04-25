@@ -5,7 +5,8 @@ import CTAInline from '@/components/shared/CTAInline';
 
 export default function PricingSection() {
   const { pricing, contact } = siteConfig;
-  const waLink = `https://wa.me/${contact.whatsapp.replace('+', '')}`;
+  // Enlace actualizado con el mensaje global prellenado
+  const waLink = `https://wa.me/${contact.whatsapp.replace('+', '')}?text=${encodeURIComponent(contact.whatsappMessage)}`;
 
   return (
     <Section id="precios" className="bg-[#F3F6FA]">
@@ -31,14 +32,15 @@ export default function PricingSection() {
             </span>
           </div>
           
+          {/* Fila de Confianza Original */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
             <div className="space-y-2">
               <h4 className="font-bold text-[#031E72]">Presupuesto Final</h4>
               <p className="text-sm text-[#072A8C]/60">Sin cargos ocultos ni sorpresas de último momento.</p>
             </div>
             <div className="space-y-2 border-y md:border-y-0 md:border-x border-[#F3F6FA] py-6 md:py-0 md:px-8">
-              <h4 className="font-bold text-[#031E72]">Financiamiento</h4>
-              <p className="text-sm text-[#072A8C]/60">Opciones flexibles diseñadas para tu comodidad económica.</p>
+              <h4 className="font-bold text-[#031E72]">Transparencia</h4>
+              <p className="text-sm text-[#072A8C]/60">Claridad absoluta en cada etapa de tu tratamiento digital.</p>
             </div>
             <div className="space-y-2">
               <h4 className="font-bold text-[#031E72]">Asesoría Digital</h4>
@@ -46,7 +48,57 @@ export default function PricingSection() {
             </div>
           </div>
 
-          <div className="mt-12 flex flex-col items-center gap-6">
+          {/* NUEVA FILA: Métodos de Pago y Financiamiento */}
+          <div className="mt-10 pt-10 border-t border-[#F3F6FA] grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            
+            {/* Tarjetas */}
+            <div className="flex flex-col items-center space-y-3">
+              <div className="w-12 h-12 rounded-full bg-[#F3F6FA] flex items-center justify-center text-[#3EA0FF]">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#031E72] text-sm">Tarjetas Bancarias</h4>
+                <p className="text-xs text-[#072A8C]/70 mt-1">Aceptamos todas las tarjetas de crédito y débito.</p>
+              </div>
+            </div>
+
+            {/* MSI */}
+            <div className="flex flex-col items-center space-y-3">
+              <div className="w-12 h-12 rounded-full bg-[#F3F6FA] flex items-center justify-center text-[#3EA0FF]">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#031E72] text-sm">Meses sin Intereses</h4>
+                <p className="text-xs text-[#072A8C]/70 mt-1">Disponibles con tarjetas de crédito participantes.</p>
+              </div>
+            </div>
+
+            {/* Financiamiento Personalizado (Resaltado para generar preguntas) */}
+            <div className="flex flex-col items-center space-y-3 p-4 bg-[#3EA0FF]/5 rounded-2xl border border-[#3EA0FF]/20 relative">
+              <div className="absolute -top-3 right-3">
+                <span className="flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3EA0FF] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-[#3EA0FF]"></span>
+                </span>
+              </div>
+              <div className="w-12 h-12 rounded-full bg-[#3EA0FF]/10 flex items-center justify-center text-[#3EA0FF]">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <div>
+                <h4 className="font-bold text-[#3EA0FF] text-sm">Financiamiento Interno</h4>
+                <p className="text-xs text-[#031E72]/80 font-medium mt-1">Pregunta por nuestros planes personalizados.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-10 flex flex-col items-center gap-6">
             <p className="text-[#031E72] font-semibold">
               ¿Listo para conocer tu plan personalizado?
             </p>

@@ -5,7 +5,7 @@ import Button from '@/components/ui/Button';
 
 export default function ResultsSection() {
   const { results, contact } = siteConfig;
-  const waLink = `https://wa.me/${contact.whatsapp.replace('+', '')}`;
+  const waLink = `https://wa.me/${contact.whatsapp.replace('+', '')}?text=${encodeURIComponent(contact.whatsappMessage)}`;
 
   return (
     <Section id="resultados" className="bg-white overflow-hidden">
