@@ -87,7 +87,7 @@ export const siteConfig = {
       }
     ],
   },
-
+  
   results: {
     title: "Resultados que transforman vidas",
     description: "Nuestra prioridad es la naturalidad. Gracias al control total en nuestro laboratorio, logramos texturas, colores y ajustes que se integran perfectamente con tu rostro.",
@@ -147,5 +147,21 @@ export const siteConfig = {
     title: "Comienza hoy tu cambio",
     subtitle: "Agenda tu cita en Odontic Clínica Integral y descubre el poder de una sonrisa diseñada digitalmente.",
     ctaLabel: "Solicita tu valoración aquí",
+  },
+
+  // NUEVA SECCIÓN: Galería de Fotos Reales
+  gallery: {
+    title: "Excelencia Clínica y Calidad Humana",
+    subtitle: "Conoce nuestras instalaciones de vanguardia y al equipo de especialistas dedicados a transformar tu sonrisa en Tepic.",
+    images: [
+      { src: "/images/gallery/dentistas-tepic-1.webp", alt: "Doctor Jorge y paciente en valoración de diseño de sonrisa en Tepic" },
+      { src: "/images/gallery/dentistas-tepic-2.webp", alt: "Consultorio dental moderno e impecable en Odontic Clínica Integral" },
+      { src: "/images/gallery/dentistas-tepic-3.webp", alt: "Especialista Odontic utilizando escáner intraoral 3D en Nayarit" },
+      { src: "/images/gallery/dentistas-tepic-4.webp", alt: "Área de recepción cómoda y segura para pacientes en Tepic Centro" },
+      { src: "/images/gallery/dentistas-tepic-5.webp", alt: "Tecnología de laboratorio dental in-house para carillas en Odontic" },
+      { src: "/images/gallery/dentistas-tepic-6.webp", alt: "Detalle de equipo dental de alta gama para procedimientos estéticos" },
+      { src: "/images/gallery/dentistas-tepic-7.webp", alt: "Rostro feliz de paciente tras tratamiento de ortodoncia invisible en Tepic" },
+      { src: "/images/gallery/dentistas-tepic-8.webp", alt: "Equipo de dentistas certificados de Odontic Clínica Integral" },
+    ],
   },
 };

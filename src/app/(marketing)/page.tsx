@@ -7,7 +7,8 @@ import ProblemSection from '@/components/sections/ProblemSection';
 import ProcessSection from '@/components/sections/ProcessSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import ResultsSection from '@/components/sections/ResultsSection';
-import TestimonialsSection from '@/components/sections/TestimonialsSection'; // <-- Nuevo
+import TestimonialsSection from '@/components/sections/TestimonialsSection';
+import GallerySection from '@/components/sections/GallerySection'; // <-- Nueva importación de Galería
 import LabSection from '@/components/sections/LabSection';
 import PricingSection from '@/components/sections/PricingSection';
 import FAQSection from '@/components/sections/FAQSection';
@@ -36,8 +37,10 @@ export default function HomePage() {
       <ServicesSection />
       <ResultsSection />
       
-      {/* Nueva Sección de Testimonios */}
       <TestimonialsSection />
+      
+      {/* Nueva Sección de Galería (Efecto Instagram) */}
+      <GallerySection />
       
       <LabSection />
       <PricingSection />
