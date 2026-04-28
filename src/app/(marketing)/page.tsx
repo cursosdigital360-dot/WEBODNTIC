@@ -12,6 +12,7 @@ import GallerySection from '@/components/sections/GallerySection'; // <-- Nueva 
 import LabSection from '@/components/sections/LabSection';
 import PricingSection from '@/components/sections/PricingSection';
 import FAQSection from '@/components/sections/FAQSection';
+import MapSection from '@/components/sections/MapSection'; // <-- Importa el mapa
 import ContactSection from '@/components/sections/ContactSection';
 
 // Botón persistente
@@ -45,6 +46,7 @@ export default function HomePage() {
       <LabSection />
       <PricingSection />
       <FAQSection />
+      <MapSection />
       <ContactSection />
       <WhatsAppStickyButton />
     </main>

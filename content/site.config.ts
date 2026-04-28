@@ -8,7 +8,6 @@ export const siteConfig = {
   contact: {
     phone: "311 202 0547",
     whatsapp: "+523112020547",
-    // NUEVO: Mensaje global prellenado para WhatsApp
     whatsappMessage: "Hola Odontic, visité su sitio web y me interesa agendar mi valoración digital. Quisiera información sobre el diseño de sonrisa y los planes de financiamiento.",
     address: "Calle Juan Escutia 168 A, Centro",
     city: "Tepic, Nayarit",
@@ -94,23 +93,26 @@ export const siteConfig = {
   },
 
   testimonials: {
-    title: "Historias de pacientes reales",
-    subtitle: "El impacto de un diseño de sonrisa digital va más allá de la estética; cambia cómo te presentas al mundo.",
+    title: "Opiniones en Google",
+    subtitle: "La confianza de nuestros pacientes es nuestro mejor respaldo. Más de 50 reseñas de 5 estrellas en Tepic.",
     items: [
       {
-        name: "Mariana V.",
-        treatment: "Diseño de Sonrisa & Carillas",
-        text: "Toda mi vida me tapé la boca al sonreír en las fotos. El nivel de detalle que lograron con el escáner 3D es increíble. Mis carillas se ven 100% naturales, nadie cree que no son mis dientes originales."
+        name: "Emily Elizabeth",
+        treatment: "Ortodoncia Digital",
+        text: "Excelente servicio, ahí llevé mi tratamiento de ortodoncia y me encantó, los doctores son muy amables y muy buenos en lo que hacen 👌🏻",
+        stars: 5
       },
       {
-        name: "Ricardo G.",
-        treatment: "Ortodoncia Estética",
-        text: "Lo que más me gustó fue la claridad. Desde el día uno pude ver en pantalla cómo iba a quedar mi mordida. El proceso fue exacto al plan, sin sorpresas en el precio ni en los tiempos."
+        name: "Jocelin Silva",
+        treatment: "Valoración Integral",
+        text: "Excelente atención desde el momento de agendar, trato muy amable y profesional, me ofrecieron opciones de tratamiento de acuerdo a mi necesidad.",
+        stars: 5
       },
       {
-        name: "Elena M.",
-        treatment: "Restauración Integral",
-        text: "El hecho de que tengan su propio laboratorio en Tepic hizo toda la diferencia. Los ajustes los hicieron ahí mismo en la cita. Un trato completamente premium y profesional."
+        name: "Irma Briseño",
+        treatment: "Implantes Dentales",
+        text: "Hoy comparto mi experiencia en Odontic Clínica Dental Integral, estoy muy contenta con mis implantes, me siento segura y... (Ver más)",
+        stars: 5
       }
     ]
   },
@@ -149,7 +151,6 @@ export const siteConfig = {
     ctaLabel: "Solicita tu valoración aquí",
   },
 
-  // NUEVA SECCIÓN: Galería de Fotos Reales
   gallery: {
     title: "Excelencia Clínica y Calidad Humana",
     subtitle: "Conoce nuestras instalaciones de vanguardia y al equipo de especialistas dedicados a transformar tu sonrisa en Tepic.",
